@@ -10,6 +10,9 @@ import {
 } from "@react-three/drei";
 import Com from "../public/Com";
 import "./App.css";
+import Bio from "./components/about/Bio";
+import Hobby from "./components/about/Hobby";
+import FindMe from "./components/about/FindMe";
 function App() {
   return (
     <div className=" flex justify-center">
@@ -41,6 +44,9 @@ function App() {
 
         <Flag />
         <Home />
+        <Bio/>
+        <Hobby/>
+        <FindMe/>
       </div>
     </div>
   );
