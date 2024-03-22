@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+canvas{
+    height: 250px !important;
+}
+
