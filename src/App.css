@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 canvas{
-    height: 250px !important;
+    height: 800px !important;
+    display: block;
 }
 
+body{
+  min-height: 100%;
+  margin: 0;
+}

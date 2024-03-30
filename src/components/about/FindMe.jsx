@@ -2,8 +2,8 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const FindMe = () => {
   return (
-    <div className="flex flex-col p-10">
-      <h1 className="text-2xl font-bold">On the web</h1>
+    <div className="flex flex-col px-9 py-2">
+      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-4">On the web</h1>
       <ul className="flex flex-col p-5 py-3">
         <li className="flex items-center first:mt-0">
           <FaGithub/>

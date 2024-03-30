@@ -4,9 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        pink: "#edd4b9",
-        blue: '#9ccdf6',
+        primary: "#f0e7db",
+        secondary: '#ffffff40',
         brown: '#eac892'
+      },
+      width: {
+        canvas: '640px'
+      },
+      height: {
+        canvas: '640px'
       },
       fontFamily: {
         sans: ["Wix Madefor Text", "sans-serif"],

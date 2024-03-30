@@ -13,42 +13,52 @@ import "./App.css";
 import Bio from "./components/about/Bio";
 import Hobby from "./components/about/Hobby";
 import FindMe from "./components/about/FindMe";
+import Introduction from "./components/about/Introduction";
 function App() {
   return (
-    <div className=" flex justify-center">
-      <div className="w-3/6">
+    <div className=" flex justify-center bg-primary w-full h-full">
+      <div>
         <Header />
-        <div className="mt-10">
-          <Canvas>
-            <ambientLight />
-            <PerspectiveCamera
-              makeDefault
-              position={[50, 50, 100]}
-              fov={50}
-              zoom={80}
-            />
-            <OrbitControls autoRotate={true} />
-            <Suspense fallback={null}>
-              <Com />
-            </Suspense>
-            <ContactShadows
-              opacity={1}
-              scale={10}
-              blur={1}
-              far={10}
-              resolution={256}
-              color="#000000"
-            />
-          </Canvas>
+        <div className="mt-20 flex justify-center">
+          <div className="mt-[-150px] mb-[-200px] h-canvas w-canvas">
+            <Canvas>
+              <ambientLight />
+              <PerspectiveCamera
+                makeDefault
+                position={[100, 25, 0]}
+                fov={50}
+                zoom={40}
+              />
+              <OrbitControls autoRotate={true} zoo />
+              <Suspense fallback={null}>
+                <Com />
+              </Suspense>
+              <ContactShadows
+                opacity={1}
+                scale={10}
+                blur={1}
+                far={10}
+                resolution={256}
+                color="#000000"
+              />
+            </Canvas>
+          </div>
+        </div>
+        <div className="flex justify-center" >
+          <div className="w-2/5">
+            <Flag />
+            <Introduction />
+            <Home />
+            <Bio />
+            <Hobby />
+            <FindMe />
+
+          </div>
+
         </div>
 
-        <Flag />
-        <Home />
-        <Bio/>
-        <Hobby/>
-        <FindMe/>
       </div>
-    </div>
+    </div >
   );
 }
 
