@@ -6,7 +6,10 @@ export default {
       colors: {
         primary: "#f0e7db",
         secondary: '#ffffff40',
-        brown: '#eac892'
+        brown: '#eac892',
+        green: '#319795',
+        greenDark: '#285E61',
+        greenLight: '#e2e8f0'
       },
       width: {
         canvas: '640px'
