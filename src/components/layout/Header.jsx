@@ -38,7 +38,7 @@ const Header = () => {
         <div className="flex justify-evenly items-center	">
           <div ref={navRef} className="mr-3">
             <button onClick={handleNavToggle} className={`relative border border-solid border-greenLight hover:bg-greenLight ${navToggle ? 'bg-greenLight' : ''} px-3 py-2`}>
-              <RxHamburgerMenu className="text-2xl border border-solid border-greenLight hover:bg-greenLight" />
+              <RxHamburgerMenu className="text-2xl" />
             </button>
             {navToggle && (
             <div  className="absolute transform translate-x-[-134.33333px] translate-y-[16px] translate-z-0  w-1/6 bg-white p-3">

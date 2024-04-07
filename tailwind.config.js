@@ -20,6 +20,9 @@ export default {
       fontFamily: {
         sans: ["Wix Madefor Text", "sans-serif"],
       },
+      flexBasis:{
+        '3/7' : '45.8571429%'
+      }
     },
   },
   plugins: [],
