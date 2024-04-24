@@ -15,6 +15,7 @@ import Hobby from "./components/about/Hobby";
 import FindMe from "./components/about/FindMe";
 import Introduction from "./components/about/Introduction";
 import Works from "./components/work/Works";
+import WorkDetails from "./components/work/WorkDetails";
 function App() {
   return (
     <div className=" flex justify-center bg-primary w-full h-full">
@@ -47,9 +48,8 @@ function App() {
         </div>
         <div className="flex justify-center" >
           <div className="w-2/5">
-
+            <WorkDetails/>
             <Works />
-
             <Flag />
             <Introduction />
             <Home />

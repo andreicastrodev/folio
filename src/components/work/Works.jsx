@@ -6,8 +6,8 @@ const Works = () => {
 
 
     return (
-        <div className=" px-9 py-2 mt-5">
-            <h1 className="text-2xl font-bold">Works</h1>
+        <div className=" px-3 py-2 mt-5">
+            <h1 className="text-2xl font-bold ">Works</h1>
             <div className="flex flex-wrap justify-between">
                 <div className="mt-5 basis-3/7">
                     <a href="#" className="flex flex-col justify-center items-center">

@@ -9,7 +9,10 @@ export default {
         brown: '#eac892',
         green: '#319795',
         greenDark: '#285E61',
-        greenLight: '#e2e8f0'
+        greenDarker: '#22543D',
+        greenLight: '#e2e8f0',
+        blueLight: '#588AEA '
+
       },
       width: {
         canvas: '640px'
@@ -21,7 +24,7 @@ export default {
         sans: ["Wix Madefor Text", "sans-serif"],
       },
       flexBasis:{
-        '3/7' : '45.8571429%'
+        '3/7' : '48%'
       }
     },
   },
