@@ -1,8 +1,4 @@
 const Flag = () => {
-
-
-
-
     return (
         <div className="flex justify-center">
             <div className="px-9 py-4 bg-secondary rounded-lg backdrop-blur-md w-4/5">

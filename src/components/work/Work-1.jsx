@@ -1,15 +1,25 @@
 import shutendoji1 from "../../images/img-1.png";
 import shutendoji2 from "../../images/img-2.png";
+import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 const WorkDetails = () => {
   return (
-    <div className="px-3 py-2 mt-5">
+
+    <AnimatePresence>
+      <motion.div
+        initial={{ y: "100%" }} // Initial position (off-screen bottom)
+        animate={{ y: 0 }} // Final position (on-screen top)
+        exit={{ y: "100%" }} // Exit position (off-screen bottom)
+        transition={{ type: "spring", stiffness: 80, damping: 20 }} // Animation transition
+        className=" z-10 w-3/6 px-3 py-2 mt-5"
+      >
       <div>
         <div className="flex items-center">
           <div>
-            <a href="#" className="text-blueLight tracking-wider">
-              Works&nbsp;
-            </a>
+            <Link to='/works' className="text-blueLight tracking-wider">
+              Works &nbsp;
+            </Link>
             <span>&gt;</span>
           </div>
 
@@ -28,7 +38,7 @@ const WorkDetails = () => {
         <div className="mt-6">
           <div className="flex items-center">
             <h4 className="uppercase text-sm text-greenDarker font-bold bg-greenLight py-0.5 px-2.5">Website</h4>
-            <span className="ml-2"><a href="#" className="text-blueLight tracking-wider">https://www.inkdrop.app/</a></span>
+            <span className="ml-2"><a href="#" className="text-blueLight tracking-wider">https://stg-app.joinmake.jp/</a></span>
           </div>
           <div className="flex items-center mt-2">
           <h4 className="uppercase text-sm text-greenDarker font-bold bg-greenLight py-0.5 px-2.5">Platform</h4>
@@ -49,7 +59,11 @@ const WorkDetails = () => {
             </div>
         </div>
       </div>
-    </div>
+      </motion.div>
+    </AnimatePresence>
+
+
+
   );
 };
 

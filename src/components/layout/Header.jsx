@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import {  MdLightMode } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [navToggle, setNavToggle] = useState(false);
@@ -26,14 +27,14 @@ const Header = () => {
 
   return (
     <div
-      className="flex  justify-center p-4 font-sans tracking-widest font-medium items-center  bg-secondary fixed w-full z-10	 backdrop-blur-md
+      className=" top-0 left-0 right-0 flex  justify-center p-4 font-sans tracking-widest font-medium items-center  bg-secondary fixed w-full z-20	 backdrop-blur-md
 
   "
     >
       <div className="w-full flex justify-between items-center">
-        <div>
+        <Link to='/'>
           <h2 className="font-bold text-lg	">Andrei Castro</h2>
-        </div>
+        </Link>
 
         <div className="flex justify-evenly items-center	">
           <div ref={navRef} className="mr-3">

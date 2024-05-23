@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import Home from "./components/home/Home";
-import Flag from "./components/layout/Flag";
 import Header from "./components/layout/Header";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -8,14 +7,12 @@ import {
   PerspectiveCamera,
   ContactShadows,
 } from "@react-three/drei";
+import { Route, Routes } from "react-router-dom";
+import Works from "./components/work/Works";
+import Shutendoji from "./components/work/Work-1";
 import Com from "../public/Com";
 import "./App.css";
-import Bio from "./components/about/Bio";
-import Hobby from "./components/about/Hobby";
-import FindMe from "./components/about/FindMe";
-import Introduction from "./components/about/Introduction";
-import Works from "./components/work/Works";
-import WorkDetails from "./components/work/WorkDetails";
+import ScrollToTop from "./utils/ScrollToTop";
 function App() {
   return (
     <div className=" flex justify-center bg-primary w-full h-full">
@@ -46,22 +43,18 @@ function App() {
             </Canvas>
           </div>
         </div>
-        <div className="flex justify-center" >
-          <div className="w-2/5">
-            <WorkDetails/>
-            <Works />
-            <Flag />
-            <Introduction />
-            <Home />
-            <Bio />
-            <Hobby />
-            <FindMe />
-          </div>
+        <div className="flex justify-center">
+        <ScrollToTop />
 
+          <Routes>
+
+            <Route exact path="/" element={<Home />} />
+            <Route path="/works" element={<Works />} />
+            <Route path="/works/shutendoji" element={<Shutendoji />} />
+          </Routes>
         </div>
-
       </div>
-    </div >
+    </div>
   );
 }
 

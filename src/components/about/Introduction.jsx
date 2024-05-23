@@ -1,4 +1,4 @@
-import ProfileImg from "../../images/profile.jpg";
+import ProfileImg from "../../images/me.jpg";
 const Introduction = () => {
     return (
         <div className="flex  px-9 py-2  justify-between mt-5	">
