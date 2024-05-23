@@ -31,13 +31,18 @@ const Header = () => {
 
   "
     >
-      <div className="w-full flex justify-between items-center">
+      <div className="w-full flex justify-around items-center">
         <Link to='/'>
           <h2 className="font-bold text-lg	">Andrei Castro</h2>
         </Link>
 
-        <div className="flex justify-evenly items-center	">
-          <div ref={navRef} className="mr-3">
+        <div className="flex justify-evenly items-center">
+          <nav>
+            <ul className="flex align-center justify-around">
+              <li className="mr-3"><Link to="/works">Works</Link></li>
+            </ul>
+          </nav>
+          {/* <div ref={navRef} className="mr-3">
             <button onClick={handleNavToggle} className={`relative border border-solid border-greenLight hover:bg-greenLight ${navToggle ? 'bg-greenLight' : ''} px-3 py-2`}>
               <RxHamburgerMenu className="text-2xl" />
             </button>
@@ -64,7 +69,7 @@ const Header = () => {
               </nav>
             </div>
             )}
-          </div>
+          </div> */}
           <div>
             <button className="border border-solid border-greenLight hover:bg-greenLight px-3 py-2">
               <MdLightMode className="text-2xl" />
