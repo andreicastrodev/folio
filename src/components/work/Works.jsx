@@ -1,4 +1,4 @@
-import shutendoji from "../../images/shutendoji.webp";
+import shutendoji from "../../images/banner-1.jpg";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -22,10 +22,9 @@ const Works = () => {
                 alt=""
               />
               <div className="flex flex-col justify-center items-center mt-3">
-                <h1 className="text-lg">Shutendoji</h1>
+                <h1 className="text-lg">Join &amp; Make</h1>
                 <p className="text-center text-sm	">
-                  A Markdown note-taking app with 100+ plugins, cross-platform
-                  and encrypted data sync support.
+                Brew your own Japanese sake with water, rice, and music. Experience a new way of making sake.
                 </p>
               </div>
             </div>

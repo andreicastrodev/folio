@@ -1,28 +1,28 @@
-import { useEffect, useRef, useState } from "react";
+// import { useEffect, useRef, useState } from "react";
 import {  MdLightMode } from "react-icons/md";
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [navToggle, setNavToggle] = useState(false);
-  const navRef = useRef(null);
+  // const [navToggle, setNavToggle] = useState(false);
+  // const navRef = useRef(null);
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        setNavToggle(false); // Close the navigation if clicked outside
-      }
-    }
+  // useEffect(() => {
+  //   function handleClickOutside(event) {
+  //     if (navRef.current && !navRef.current.contains(event.target)) {
+  //       setNavToggle(false); // Close the navigation if clicked outside
+  //     }
+  //   }
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [navRef]);
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [navRef]);
   
-  const handleNavToggle = () => {
-    setNavToggle(!navToggle); // Toggle the value of navToggle
-  };
+  // const handleNavToggle = () => {
+  //   setNavToggle(!navToggle); // Toggle the value of navToggle
+  // };
 
 
   return (
