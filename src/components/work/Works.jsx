@@ -10,7 +10,7 @@ const Works = () => {
         animate={{ y: 0 }} // Final position (on-screen top)
         exit={{ y: "100%" }} // Exit position (off-screen bottom)
         transition={{ type: "spring", stiffness: 80, damping: 20 }} // Animation transition
-        className="mt-5"
+        className="mt-5 ml-6"
       >
         <h1 className="text-2xl font-bold ">Works</h1>
         <Link to="/works/shutendoji" className="flex flex-wrap justify-between">

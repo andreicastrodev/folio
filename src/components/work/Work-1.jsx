@@ -13,7 +13,7 @@ const WorkDetails = () => {
         animate={{ y: 0 }} // Final position (on-screen top)
         exit={{ y: "100%" }} // Exit position (off-screen bottom)
         transition={{ type: "spring", stiffness: 80, damping: 20 }} // Animation transition
-        className=" z-10 w-3/6 px-3 py-2 mt-5"
+        className=" z-10 w-3/6  px-3 py-2 mt-5  lg:w-4/6  sm:w-10/12 xsm:w-11/12"
       >
         <div>
           <div className="flex items-center">
@@ -28,7 +28,7 @@ const WorkDetails = () => {
               Join &amp; Make
             </h1>
             <span className="ml-2 bg-greenLight text-sm p-0.5 tracking-wider">
-              2022&#45;
+              2022
             </span>
           </div>
           <div className="mt-2">

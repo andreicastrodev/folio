@@ -14,7 +14,7 @@ const Bio = () => {
         </span>
       </div>
       <div className="flex items-baseline	">
-        <h1 className="font-bold mt-3">2022 - Present</h1>
+        <h1 className="font-bold mt-3 ">2022 - Present</h1>
         <span  className="ml-2">working at <a href="https://sysplex.us/ " target="_blank">Sysplex IT Solutions</a> as a backend developer </span>
       </div>
     </div>

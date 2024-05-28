@@ -19,7 +19,7 @@ function App() {
       <div>
         <Header />
         <div className="mt-20 flex justify-center">
-          <div className="mt-[-150px] mb-[-200px] h-canvas w-canvas">
+          <div className="mt-[-150px] mb-[-200px] h-canvas w-canvas xsm:w-sxm">
             <Canvas>
               <ambientLight />
               <PerspectiveCamera
@@ -45,9 +45,7 @@ function App() {
         </div>
         <div className="flex justify-center">
         <ScrollToTop />
-
           <Routes>
-
             <Route exact path="/" element={<Home />} />
             <Route path="/works" element={<Works />} />
             <Route path="/works/shutendoji" element={<Shutendoji />} />
