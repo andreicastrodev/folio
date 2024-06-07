@@ -25,15 +25,15 @@ const Contact = () => {
           </li>
           <li className="flex items-center mt-5">
             <FaGithub className="text-teal dark:text-[#81e6d9]"  />
-            <span className="ml-2 text-teal dark:text-[#81e6d9]">@andreicastrodev</span>
+            <a href="https://github.com/andreicastrodev" target="_blank" className="ml-2 text-teal dark:text-[#81e6d9]">@andreicastrodev</a>
           </li>
           <li className="flex items-center mt-5">
             <FaLinkedin className="text-teal dark:text-[#81e6d9]"  />
-            <span className="ml-2 text-teal dark:text-[#81e6d9]">@andreicastrodev</span>
+            <a  href="https://www.linkedin.com/in/andreicastrodev/" target="_blank" className="ml-2 text-teal dark:text-[#81e6d9]">@andreicastrodev</a>
           </li>
           <li className="flex items-center mt-5">
             <FaInstagram className="text-teal dark:text-[#81e6d9]"  />
-            <span className="ml-2 text-teal dark:text-[#81e6d9]">@_andreicastro</span>
+            <a href="https://www.instagram.com/__andreicastro/" target="_blank"  className="ml-2 text-teal dark:text-[#81e6d9]">@_andreicastro</a>
           </li>
         </ul>
       </div>

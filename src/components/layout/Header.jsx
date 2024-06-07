@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import DarkMode from "../../utils/DarkMode";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import { GiSpiderFace } from "react-icons/gi";
 
 const Header = () => {
   const [navToggle, setNavToggle] = useState(false);
@@ -34,8 +33,6 @@ const Header = () => {
       <div className="w-full flex justify-between items-center">
         <div>
           <Link to="/" className="flex items-center">
-            <GiSpiderFace className="text-2xl" />
-
             <h2 className="font-bold text-2xl ml-2 font-oldLondon">NXCOLE</h2>
           </Link>
         </div>
@@ -59,16 +56,20 @@ const Header = () => {
                 <nav className="flex">
                   <ul className="w-full">
                     <li
-                      className="cursor-pointer p-2 hover:bg-greenLight  dark:hover:bg-[rgba(255,255,255,0.16)] p-3 "
+                      className="cursor-pointer p-2 hover:bg-greenLight dark:hover:bg-[rgba(255,255,255,0.16)] p-3"
                       onClick={handleNavToggle}
                     >
-                      <Link to="/works">Works</Link>
+                      <Link to="/works" className="block w-full h-full">
+                        Works
+                      </Link>
                     </li>
                     <li
-                      className="cursor-pointer p-2 hover:bg-greenLight  dark:hover:bg-[rgba(255,255,255,0.16)] p-3 "
+                      className="cursor-pointer p-2 hover:bg-greenLight dark:hover:bg-[rgba(255,255,255,0.16)] p-3"
                       onClick={handleNavToggle}
                     >
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact" className="block w-full h-full">
+                        Contact
+                      </Link>
                     </li>
                   </ul>
                 </nav>

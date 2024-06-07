@@ -1,12 +1,12 @@
-import shutendoji1 from "../../images/step-1.png";
-import shutendoji2 from "../../images/step-2.png";
-import shutendoji3 from "../../images/step-3.png";
-import shutendoji4 from "../../images/step-4.png";
+import shutendoji1 from "../../../public/images/step-1.png";
+import shutendoji2 from "../../../public/images/step-2.png";
+import shutendoji3 from "../../../public/images/step-3.png";
+import shutendoji4 from "../../../public/images/step-4.png";
 import { Link } from "react-router-dom";
 
 const WorkDetails = () => {
   return (
-    <div className=" z-40 w-3/6  px-3 py-2 mt-5  lg:w-4/6  sm:w-10/12 xsm:w-full">
+    <div className="z-40 w-3/6  px-3 py-2 mt-5   sm:w-10/12 xsm:w-full xsm:px-1 xsm:py-1  ">
       <div>
         <div className="flex items-center">
           <div>
@@ -36,23 +36,23 @@ const WorkDetails = () => {
           </p>
         </div>
         <div className="mt-6">
-          <div className="flex items-center">
+          <div className="flex items-center xsm:flex-col">
             <h4 className="uppercase text-sm text-greenDarker font-bold bg-greenLight dark:text-[#9AE6B4] dark:bg-[rgba(154,230,180,0.16)] py-0.5 px-2.5">
               Website
             </h4>
             <span className="ml-2">
-              <a href="#" className="text-blueLight tracking-wider dark:text-[rgb(255,99,195)] ">
+              <a href="https://stg-app.joinmake.jp/" target="_blank" className="text-blueLight tracking-wider dark:text-[rgb(255,99,195)] ">
                 https://stg-app.joinmake.jp/
               </a>
             </span>
           </div>
-          <div className="flex items-center mt-2">
+          <div className="flex items-center mt-2 xsm:flex-col">
             <h4 className="uppercase text-sm text-greenDarker font-bold bg-greenLight dark:text-[#9AE6B4] dark:bg-[rgba(154,230,180,0.16)] py-0.5 px-2.5">
               Platform
             </h4>
             <span className="ml-2 ">Windows/macOS/Linux/iOS/Android</span>
           </div>
-          <div className="flex items-center mt-2">
+          <div className="flex items-center mt-2 xsm:flex-col">
             <h4 className="uppercase text-sm text-greenDarker font-bold bg-greenLight dark:text-[#9AE6B4] dark:bg-[rgba(154,230,180,0.16)] py-0.5 px-2.5">
               Stack
             </h4>

@@ -36,9 +36,13 @@ function App() {
                 makeDefault
                 position={[100, 25, 0]}
                 fov={50}
-                zoom={40}
+                zoom={50}
               />
-              <OrbitControls autoRotate={true} />
+              <OrbitControls
+                autoRotate={true}
+                enableZoom={false}
+                enablePan={false}
+              />
               <Suspense fallback={null}>
                 <Com />
               </Suspense>

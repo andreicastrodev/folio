@@ -32,7 +32,7 @@ const DarkMode = () => {
       onClick={toggleDarkMode}
     >
       {darkMode ? (
-        <IoSunny className="text-xl text-black" />
+        <IoSunny className="text-xl text-slate-800" />
       ) : (
         <IoMdMoon className="text-xl text-white" />
       )}

@@ -1,6 +1,6 @@
 const Bio = () => {
   return (
-    <div className="flex flex-col px-9 py-2">
+    <div className="flex flex-col px-9 py-2 xsm:p-1">
       <h1 className="text-2xl font-bold underline underline-offset-8 decoration-4 decoration-grey">Bio</h1>
       <div className="flex items-baseline">
         <h1 className="font-bold mt-3">1999</h1>
@@ -15,7 +15,7 @@ const Bio = () => {
       </div>
       <div className="flex items-baseline	">
         <h1 className="font-bold mt-3">2022 - Present</h1>
-        <span  className="ml-2">working at <a href="https://sysplex.us/ " target="_blank">Sysplex IT Solutions</a> as a backend developer </span>
+        <span  className="ml-2">working at <a href="https://sysplex.us/ " target="_blank" className="text-teal dark:text-[rgb(255,99,195)]">Sysplex IT Solutions</a> as a backend developer </span>
       </div>
     </div>
   );

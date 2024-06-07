@@ -1,9 +1,11 @@
-import shutendoji from "../../images/banner-1.jpg";
+import shutendoji from "../../../public/images/banner-1.jpg";
 import { Link } from "react-router-dom";
 const Works = () => {
   return (
     <div className="ml-6 pt-5 pb-5 z-40">
-      <h1 className="text-2xl font-bold ">Works</h1>
+      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-4 decoration-grey sm:text-center">
+        Works
+      </h1>
       <Link
         to="/works/shutendoji"
         className="flex flex-wrap justify-between xsm:justify-center"
