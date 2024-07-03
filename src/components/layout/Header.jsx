@@ -33,7 +33,7 @@ const Header = () => {
       <div className="w-full flex justify-between items-center">
         <div>
           <Link to="/" className="flex items-center">
-            <h2 className="font-bold text-2xl ml-2 font-oldLondon">NXCOLE</h2>
+            <h2>&nbsp;</h2>
           </Link>
         </div>
 

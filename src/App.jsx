@@ -1,20 +1,13 @@
-import { Suspense } from "react";
 import Home from "./components/home/Home";
 import Header from "./components/layout/Header";
-import { Canvas } from "@react-three/fiber";
-import {
-  OrbitControls,
-  PerspectiveCamera,
-  ContactShadows,
-} from "@react-three/drei";
+import Footer from "./components/layout/Footer";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Works from "./components/work/Works";
 import Shutendoji from "./components/work/Work-1";
-import Com from "../public/Com";
 import "./App.css";
 import Contact from "./components/about/Contact";
 import { motion, AnimatePresence } from "framer-motion";
-
+import VoxelCanvas from "./components/voxel/VoxelCanvas";
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -30,31 +23,7 @@ function App() {
         <Header />
         <div className="mt-20 flex justify-center">
           <div className="mt-[-150px] mb-[-200px] h-canvas w-canvas xsm:w-sxm">
-            <Canvas>
-              <ambientLight />
-              <PerspectiveCamera
-                makeDefault
-                position={[100, 25, 0]}
-                fov={50}
-                zoom={50}
-              />
-              <OrbitControls
-                autoRotate={true}
-                enableZoom={false}
-                enablePan={false}
-              />
-              <Suspense fallback={null}>
-                <Com />
-              </Suspense>
-              <ContactShadows
-                opacity={1}
-                scale={10}
-                blur={1}
-                far={10}
-                resolution={256}
-                color="#000000"
-              />
-            </Canvas>
+            <VoxelCanvas/>
           </div>
         </div>
         <AnimatePresence
@@ -83,6 +52,8 @@ function App() {
             </Routes>
           </motion.div>
         </AnimatePresence>
+        <Footer/>
+
       </div>
     </div>
   );
